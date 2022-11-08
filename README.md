@@ -50,5 +50,27 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 - Under the `Build Environment` check/click `Provide Node & npm bin/folder to Path`
 - In the Build select `Execute with Shell` and give the commands that needs to be executed
 
+### Steps For Continuos Integration:
+- Create a dev branch and switch to the dev branch to makes the changes and push to the github
+- Create a gitHub-webhook http://jenkinsserverip:8080/github-webhook to trigger with every commit/push from your local host to trigger this job
+- Create a `meghana-test` job to test the dev branch as soon as the code is pushed and to trigger another job upon success(test pass)
+- In the description give `Testing dev branch`
+- Check `GitHub Project` and give the HTTPS url of the github
+![image](https://user-images.githubusercontent.com/97250268/200664942-8e2a9d14-e46f-4c8f-be4a-c73c5fcd24c2.png)
+- Under the `Office 365 Connector` check/click `Restrict where this project can be run` and give `sparta-ubuntu-node`(This is given to make the project run on agent node and not on master node`
+- Under the `Source Code Management` select git and give the SSH url of the github and select the private key credentials and mention `*/dev` in the `Branch Specifier`
+![image](https://user-images.githubusercontent.com/97250268/200666118-f9e19bce-4355-4ce4-9dde-b8f915f81ea4.png)
+- Under the `Build Triggers` check/click `GitHub hook trigger for GITScm polling`
+- Under the `Build Environment` check/click `Provide Node & npm bin/ folder to PATH`
+![image](https://user-images.githubusercontent.com/97250268/200666744-81ab623b-e7bf-483b-ba8e-f0fd63dd5b96.png)
+- Under the `Build` --> `Execute with Shell` -->write the commands to be executed
+![image](https://user-images.githubusercontent.com/97250268/200667230-52949c05-6710-4e61-934c-6441733d596e.png)
+
+- Under the `Post-build Actions` 
+![image](https://user-images.githubusercontent.com/97250268/200667609-43c33d50-017e-4202-95ef-5b94ac38b838.png)
+- Click `Apply and Save` 
+
+
+
 
 
