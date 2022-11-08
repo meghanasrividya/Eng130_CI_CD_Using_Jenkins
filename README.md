@@ -18,3 +18,5 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 ### What are Jenkins Stages
 
 ![image](https://user-images.githubusercontent.com/97250268/200540931-912c8678-2ef6-42c7-b25b-8b41b5d1ac2c.png)
+### Steps for Jenkins Pipeline
+- Step 1: Create a new ssh key pair called eng130_jenkins_meghana- copy eng130_jenkins_meghana
