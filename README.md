@@ -12,3 +12,6 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 - In actuality, then, CI and CD share little in common. Besides starting with the same word (“continuous”) and being different stages in modern software delivery pipelines, they don’t have much to do with one another.
 
 ![image](https://user-images.githubusercontent.com/97250268/200538257-222a3c2d-4449-46a2-bc8e-b3fe164af909.png)
+### What are Webhooks?
+- Webhooks allow interaction between web-based applications through the use of custom callbacks. The use of webhooks allows web applications to automatically communicate with other web-apps. Unlike traditional systems where one system (subject) keeps polling another system (observer) for some data, Webhooks allow the observer to push data into the subject’s system automatically whenever some event occurs.
+- This eliminates the need for constant checking to be done by the subject.
