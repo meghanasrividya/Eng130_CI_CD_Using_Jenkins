@@ -20,3 +20,8 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 ![image](https://user-images.githubusercontent.com/97250268/200540931-912c8678-2ef6-42c7-b25b-8b41b5d1ac2c.png)
 ### Steps for Jenkins Pipeline
 - Step 1: Create a new ssh key pair called eng130_jenkins_meghana- copy eng130_jenkins_meghana
+- Step 1:Create a new CICD pipeline
+- Step 3: Generate a new ssh key pair (ensure to generate it in .ssh folder on local host)
+- copy file.pub to github repo(will show in minute)
+- copy private file in jenkins
+- create a new job to test the CI
