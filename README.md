@@ -1,9 +1,9 @@
 # Eng130_CI_CD_Using_Jenkins
 Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenkins
 ### What is Continuous Integration?
--Continuous Integrationis the practice of automating the build and testing of code every time a change is made — and committing that code back to a central repository.
+- Continuous Integrationis the practice of automating the build and testing of code every time a change is made — and committing that code back to a central repository.
 ### What is Continuos Delivery?
--Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. In continuous Delivery the deployment is completed manually.
+- Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. In continuous Delivery the deployment is completed manually.
 ### What is the differnce between Continuous Delivery and Continuous Deployment?
 - Simply put, CI is the process of integrating code into a mainline code base. In almost all scenarios today, CI is done using platforms designed specifically for the purpose. Implementing CI is, therefore, as simple as using the right tools.
 
