@@ -70,6 +70,13 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 ![image](https://user-images.githubusercontent.com/97250268/200667609-43c33d50-017e-4202-95ef-5b94ac38b838.png)
 - Click `Apply and Save` 
 
+#### Steps for Merging `main` and `dev` branches
+- Create a job `meghana-merge-dev` to merge dev branch with main branch
+- In the description give `Merging dev branch with dev branch`
+- Follow the same steps as in creating `meghana-test` job until the `Build Environment` 
+- In the `Build with execute shell` give the commands `git checkout main` and `git merge origin/dev`
+- In the `Post-build Actions` select `Git Publisher` and give `Branch to push` :`main` and `Target remote name` :`origin`
+- Click on `Apply` and `Save`
 
 
 
