@@ -15,3 +15,6 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 ### What are Webhooks?
 - Webhooks allow interaction between web-based applications through the use of custom callbacks. The use of webhooks allows web applications to automatically communicate with other web-apps. Unlike traditional systems where one system (subject) keeps polling another system (observer) for some data, Webhooks allow the observer to push data into the subject’s system automatically whenever some event occurs.
 - This eliminates the need for constant checking to be done by the subject.
+### What are Jenkins Stages
+
+![image](https://user-images.githubusercontent.com/97250268/200540931-912c8678-2ef6-42c7-b25b-8b41b5d1ac2c.png)
