@@ -19,9 +19,36 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 
 ![image](https://user-images.githubusercontent.com/97250268/200540931-912c8678-2ef6-42c7-b25b-8b41b5d1ac2c.png)
 ### Steps for Jenkins Pipeline
+
+![image](https://user-images.githubusercontent.com/97250268/200653970-3178764d-579e-4dd1-a738-da2b70a90d04.png)
+
 - Step 1: Create a new ssh key pair called eng130_jenkins_meghana- copy eng130_jenkins_meghana
 - Step 1:Create a new CICD pipeline
 - Step 3: Generate a new ssh key pair (ensure to generate it in .ssh folder on local host)
 - copy file.pub to github repo(will show in minute)
 - copy private file in jenkins
 - create a new job to test the CI
+
+![image](https://user-images.githubusercontent.com/97250268/200655307-a7f7e077-ba6c-4b05-9218-223356931880.png)
+
+
+### Steps to create new job in Jenkins
+
+- Enter an item name
+- Select the free style project and click on ok
+- In the description - give the description  of the job
+- Check/click on `Discard old builds` and enter 3 for `Max # of builds to keep`
+- Check/click on GitHub project and give the `Project URL` copy the Https link from the github and paste here
+- Under the `Office 365 Connector` click `Restrict where this project can be run` and give the label expression `sparta-ubuntu-node`
+- Under the `Source Code Management` click on Git , copy the ssh url from the github and paste  here
+- For Credentials click on Add and select `Kind` to `SSH Username with private Key`
+- Give the username:`eng130-meghana1-jenkins`
+- Select `Enter directly` for the private key and copy paste the private key from the .ssh folder.(public key we have added to the github repo , private key should be copied here)
+- Click on Add key
+- Select the key the error should disappear.
+- Select the master to main branch if you are using `main` branch
+- Under the `Build Environment` check/click `Provide Node & npm bin/folder to Path`
+- In the Build select `Execute with Shell` and give the commands that needs to be executed
+
+
+
