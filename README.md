@@ -114,7 +114,27 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
  - In the `Build with execute shell` write the following commands
   ![image](https://user-images.githubusercontent.com/97250268/200873449-644b9791-c904-4312-8730-a1d337a9b3fd.png)
  - click on Apply and save
+#### Steps for connecting to MongoDB
+ - Create EC2 instance from mongodb AMI and specify the security groups (SSH from MY IP and port:27017 from App IP)
+ - Create a new job `meghana-mongodb` to connect to the app machine
+ - Follow the same steps as in creating the `meghana-CD`
+ - In the `Build with execute shell` write the below code
+ ```ssh -A -o "StrictHostKeyChecking=no" ubuntu@54.74.33.255 << EOF
+ export DB_HOST=mongodb://54.170.254.64:27017/posts >> ~/.bashrc
+ sudo source ~./bashrc
+ cd app
+ sudo killall -9 node
+ npm install
+ sudo node seeds/seed.js
+
+
+ nohup node app.js > /dev/null 2>&1 &
 
  
+EOF
+```
+- Click on Apply and Save.
+
+ ### Output : When you commit some changes in the local host in dev branch and push to github , `meghana-test` is triggered since the webhook is linked to github.This inturn triggers `meghana-merge` job and merges the changes into main branch.`meghana-merge` job triggers the `meghana-CD` job and deploy the changes to the production environment.
 
 
