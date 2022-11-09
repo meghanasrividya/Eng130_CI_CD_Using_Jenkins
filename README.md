@@ -104,6 +104,7 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 - In the `Post-build Actions` select `Git Publisher` and give `Branch to push` :`main` and `Target remote name` :`origin`
 - Click on `Apply` and `Save`
 
+![image](https://user-images.githubusercontent.com/97250268/200811429-bdc32039-d9d1-4831-86f2-bc5501f97c75.png)
 
 
 
