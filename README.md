@@ -106,5 +106,11 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 
 ![image](https://user-images.githubusercontent.com/97250268/200811429-bdc32039-d9d1-4831-86f2-bc5501f97c75.png)
 
+#### Steps for creating the deployement job:
+ - Create an EC2 instance from node app AMI and specify the security groups (HTTP from port 80,ssh from MY IP and ssh from Jenkins IP)
+ - Create a new job `meghana-CD` to deploy the app in the production environment
+ - Follow the same steps as in creating `meghana-merge` job until build environment
+ - In the `Build with execute shell` write the following commands
+ 
 
 
