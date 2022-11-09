@@ -34,7 +34,7 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 ### Benefits of using Jenkins
 - It is an open source tool.
 - It is free of cost.
-- It does not require additional installations or components. Means it is easy to install.
+- It does not require additional installations or components.Means it is easy to install.
 - Easily configurable.
 - It supports 1000 or more plugins to ease your work. If a plugin does not exist, you can write the script for it and share with community.
 - It is built in java and hence it is portable.
