@@ -13,8 +13,7 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 
 ![image](https://user-images.githubusercontent.com/97250268/200538257-222a3c2d-4449-46a2-bc8e-b3fe164af909.png)
 ### What are Webhooks?
-- Webhooks allow interaction between web-based applications through the use of custom callbacks. The use of webhooks allows web applications to automatically communicate with other web-apps. Unlike traditional systems where one system (subject) keeps polling another system (observer) for some data, Webhooks allow the observer to push data into the subject’s system automatically whenever some event occurs.
-- This eliminates the need for constant checking to be done by the subject.
+- Webhook triggers the job in the jenkins with every commit and push from 
 ### What are Jenkins Stages
 
 - It contains a collection of states such as build, deploy, test and release. These jobs or events are interlinked with each other. Every state has its jobs, which work in a sequence called a continuous delivery pipeline.
@@ -135,6 +134,6 @@ EOF
 ```
 - Click on Apply and Save.
 
- ### Output : When you commit some changes in the local host in dev branch and push to github , `meghana-test` is triggered since the webhook is linked to github.This inturn triggers `meghana-merge` job and merges the changes into main branch.`meghana-merge` job triggers the `meghana-CD` job and deploy the changes to the production environment.
+ ### Output : When you commit some changes in the local host in dev branch and push to github , `meghana-test` is triggered since the webhook from jenkins is linked to github.This inturn triggers `meghana-merge` job and merges the changes into main branch.`meghana-merge` job triggers the `meghana-CD` job and deploy the changes to the production environment.
 
 
