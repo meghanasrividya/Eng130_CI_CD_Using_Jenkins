@@ -5,7 +5,9 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 ### What is Continuos Delivery?
 - Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. 
 ### What is the differnce between Continuous Delivery and Continuous Deployment?
--
+- Continuos Delivery refers to the building ,testing and delivering code changes made to the software.
+- Continuous Deployement is a further step from continuos delivery
+- The step refers to the automatic release of any developer changes from the repository to the production  
 ### What are Webhooks?
 - Webhook triggers the job in the jenkins with every commit and push from the local host to github
 ### What are Jenkins Stages
