@@ -13,7 +13,7 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 
 ![image](https://user-images.githubusercontent.com/97250268/200538257-222a3c2d-4449-46a2-bc8e-b3fe164af909.png)
 ### What are Webhooks?
-- Webhook triggers the job in the jenkins with every commit and push from the local host to github.nffff
+- Webhook triggers the job in the jenkins with every commit and push from the local host to github
 ### What are Jenkins Stages
 
 - It contains a collection of states such as build, deploy, test and release. These jobs or events are interlinked with each other. Every state has its jobs, which work in a sequence called a continuous delivery pipeline.
