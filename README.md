@@ -5,13 +5,7 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 ### What is Continuos Delivery?
 - Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. 
 ### What is the differnce between Continuous Delivery and Continuous Deployment?
-- Simply put, CI is the process of integrating code into a mainline code base. In almost all scenarios today, CI is done using platforms designed specifically for the purpose. Implementing CI is, therefore, as simple as using the right tools.
-
-- CD is more complicated. CD is about the processes that have to happen after code is integrated for app changes to be delivered to users. Those processes involving testing, staging and deploying code. There is no single type of tool that does all these things. These processes take different forms, depending on the culture of the team and the type of app it is creating.
-
-- In actuality, then, CI and CD share little in common. Besides starting with the same word (“continuous”) and being different stages in modern software delivery pipelines, they don’t have much to do with one another.
-
-![image](https://user-images.githubusercontent.com/97250268/200538257-222a3c2d-4449-46a2-bc8e-b3fe164af909.png)
+-
 ### What are Webhooks?
 - Webhook triggers the job in the jenkins with every commit and push from the local host to github
 ### What are Jenkins Stages
@@ -135,6 +129,11 @@ EOF
 - Click on Apply and Save.
 
  ### Output : When you commit some changes in the local host in dev branch and push to github , `meghana-test` is triggered since the webhook from jenkins is linked to github.This inturn triggers `meghana-merge` job and merges the changes into main branch.`meghana-merge` job triggers the `meghana-CD` job and deploy the changes to the production environment.
+ - When you do the changes in the dev branch.
+ ![image](https://user-images.githubusercontent.com/97250268/200934322-350ceb8a-20f3-429f-bbf2-82e17784f42e.png)
+ - Changes are reflected on the production environment
+ ![image](https://user-images.githubusercontent.com/97250268/200934619-b50c9caf-7d26-4e1f-b77f-d887ad843643.png)
+
 
 ### How the CI/CD pipeline is protected.
 - The local host is firewall protected and is also password protected.
