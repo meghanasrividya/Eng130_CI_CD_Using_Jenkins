@@ -17,6 +17,21 @@ Continuous_Integration and Continous_Delivery/Continuous_Deployement using Jenki
 - This eliminates the need for constant checking to be done by the subject.
 ### What are Jenkins Stages
 
+- It contains a collection of states such as build, deploy, test and release. These jobs or events are interlinked with each other. Every state has its jobs, which work in a sequence called a continuous delivery pipeline.
+
+### How Jenkins Work
+
+![image](https://user-images.githubusercontent.com/97250268/200784187-9856f62e-7127-4273-b038-2a8eb61a9d62.png)
+-  Let's see how Jenkins works. The above diagram is representing the following functions:
+
+- First of all, a developer commits the code to the source code repository. Meanwhile, the Jenkins checks the repository at regular intervals for changes.
+- Soon after a commit occurs, the Jenkins server finds the changes that have occurred in the source code repository. Jenkins will draw those changes and will start preparing a new build.
+- If the build fails, then the concerned team will be notified.
+- If built is successful, then Jenkins server deploys the built in the test server.
+- After testing, Jenkins server generates a feedback and then notifies the developers about the build and test results.
+- It will continue to verify the source code repository for changes made in the source code and the whole process keeps on repeating.
+
+
 ![image](https://user-images.githubusercontent.com/97250268/200540931-912c8678-2ef6-42c7-b25b-8b41b5d1ac2c.png)
 ### Steps for Jenkins Pipeline
 
