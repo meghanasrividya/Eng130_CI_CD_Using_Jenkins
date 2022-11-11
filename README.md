@@ -141,4 +141,4 @@ EOF
 - Data when transmitted from the local host to github is protected by ssh -public key.
 - Data when transmitted from the github to the jenkins it is protected by the ssh -private key
 - When deploying code from jenkins (master node) to production environment we have used .pem file.
-- EC2 instances are protected by the security groups
+- EC2 instances are protected by the security groups.
