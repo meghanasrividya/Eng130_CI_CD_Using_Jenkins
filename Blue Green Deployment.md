@@ -4,3 +4,7 @@ What is Blue Green Deployment?
 ![image](https://user-images.githubusercontent.com/97250268/201648284-58666050-5f8c-40f7-8fee-5d7977e621b2.png)
 
 What are the Benefits?
+- Rapid releasing. For product owners working within CI/CD frameworks, blue-green deployments are an excellent method to get your software into production.
+- Simple rollbacks.
+- Built-in disaster recovery.
+- Load balancing.
